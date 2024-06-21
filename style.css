@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 
 :root {
-  --secondary-color: #fafcff;
-  --text-dark: #0d213f;
-  --text-light: #767268;
+  --secondary-color: #fff5e1;
+  --text-dark: #0c1844;
+  --text-light: #2b2b2b;
   --extra-light: #ffffff;
-  --vino-fondo : #0f1e49;
-  --vino-oscuro : #788692;
-  --vino-claro : #6d7288; 
-  --texto-color: #f9f2e2; 
+  --vino-fondo : #c80036;
+  --vino-oscuro : #fff5e1;
+  --vino-claro : #ff6969; 
+  --texto-color: #fff5e1; 
   --max-width: 1200px;
 }
 
@@ -34,37 +34,52 @@
 }
 
 .section__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: var(--text-dark);
   margin-bottom: 1rem;
 }
 
 .section__subtitle {
-  font-size: 1rem;
+  font-size: 2rem;
   color: var(--vino-claro);
   max-width: calc(var(--max-width) / 2);
   font-weight: 1000;
 }
+
+.nav__logo {
+  width: 100px; 
+  height: auto; 
+}
+
+.nav__logo img {
+  display: block; 
+  width: 150%; 
+  height: auto; 
+}
+
 
 .btn {
   padding: 0.75rem 2rem;
   outline: none;
   border: none;
   font-size: 1rem;
-  color: var(--texto-color);
-  background-color: var(--vino-oscuro);
+  letter-spacing: 5px;
+  font-weight: 1000;
+  color: var(--text-light);
+  background-color: var(--vino-claro);
   border-radius: 5rem;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: var(--vino-claro);
+  background-color: var(--vino-oscuro);
 }
 
 a {
   text-decoration: none;
+  color: var(--text-dark);
   
 }
 
@@ -191,7 +206,7 @@ header {
 
 .era__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -214,16 +229,16 @@ header {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  color: var(--vino-fondo);
+  color: var(--vino-claro);
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(20px);
   border-radius: 10px;
   z-index: 1;
   transition: 0.3s;
 }
 
 .era__card:hover .era__details {
-  bottom: 1rem;
+  bottom: 0.2rem;
 }
 
 .era__title {
@@ -232,7 +247,7 @@ header {
 }
 
 .era__subtitle {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -262,11 +277,12 @@ header {
 .iconic__details {
   padding: 1rem;
   display: grid;
-  gap: 0.5rem;
-  font-size: 0.9rem;
+  gap: 0.2rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-dark);
   background-color: var(--extra-light);
+  text-align: center;
 }
 
 .subtitle_iconic {
