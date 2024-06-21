@@ -505,7 +505,13 @@ header {
 
   .btn {
     padding: 0.5rem 1rem; 
-    font-size: 0.8rem; 
+    font-size: 0.7rem; 
+    border-radius: 3rem; 
+  }
+
+  .btn2 {
+    padding: 0.5rem 1rem; 
+    font-size: 0.7rem; 
     border-radius: 3rem; 
   }
 }
@@ -576,6 +582,27 @@ header {
   vertical-align: middle; 
   color: var(--vino-fondo);
 }
+
+.btn2 {
+  padding: 0.5rem 0.75rem; 
+  font-size: 0.7rem; 
+  border-radius: 3rem; 
+}
+
+.btn2 i.fab.fa-instagram {
+font-size: 1.8em; 
+color: var(--vino-fondo); 
+vertical-align: middle; 
+margin-right: 5px; 
+}
+
+
+.btn2 .btn2-text {
+font-size: 1rem; 
+vertical-align: middle; 
+color: var(--vino-fondo);
+}
+
 
 
 @media (max-width: 1200px) {
